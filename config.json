@@ -1,0 +1,41 @@
+{
+  "ru_input": null,
+  "en_input": null,
+  "ru_output": null,
+  "en_output": null,
+  "log_enabled": true,
+  "log_text": true,
+  "log_audio": false,
+  "preset": "Сбалансированный",
+  "bluetooth_mode": true,
+  "manual_language_mode": false,
+  "vad_threshold": 0.8,
+  "noise_backend": "auto",
+  "segmentation": {
+    "merge_pause_ms": 2500,
+    "max_segment_ms": 20000,
+    "chunk_overlap_ms": 800,
+    "min_speech_ms": 500,
+    "min_audio_length_sec": 0.4
+  },
+  "language_gate": {
+    "enabled": true,
+    "threshold": 0.3,
+    "min_chars": 3
+  },
+  "models": {
+    "stt": "multilingual_ctc",
+    "translator_type": "gguf",
+    "translator_path": "D:/models/lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf",
+    "tts_ru": "models/tts/piper/ru/voice.onnx",
+    "tts_en": "models/tts/piper/en/voice.onnx"
+  },
+  "ru_src_lang": "ru",
+  "ru_tgt_lang": "en",
+  "en_src_lang": "en",
+  "en_tgt_lang": "ru",
+  "noise_reduction": {
+    "ru": false,
+    "en": false
+  }
+}

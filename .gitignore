@@ -1,0 +1,36 @@
+# Окружение и сторонние репозитории
+venv/
+GigaAM/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Модели — тяжёлые файлы, хранятся только локально
+models/*
+!models/README.md
+
+# Аудио и временные файлы
+*.wav
+*.part
+temp_*
+configs/
+logs/
+
+# Рабочие заметки и планы
+plans/
+HANDOFF.md
+AGENTS.md
+.kilo/
+
+# Исходные несжатые картинки интерфейса.
+# В репозиторий идут сжатые версии в корне.
+assets/originals/
+
+# IDE и система
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Пустой файл из Проводника Windows
+Текстовый документ.txt

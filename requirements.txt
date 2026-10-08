@@ -1,0 +1,28 @@
+# BabelDuo — runtime зависимости
+#
+# Тяжёлые пакеты (torch, torchaudio, lightning, hydra-core и др.) тянутся вместе с GigaAM:
+#   git clone https://github.com/salute-developers/GigaAM.git
+#   pip install -e ./GigaAM
+#
+# Для работы llama-cpp-python на GPU соберите/установите пакет с поддержкой CUDA:
+#   CMAKE_ARGS="-DGGML_CUDA=on" pip install llama-cpp-python --force-reinstall --no-cache-dir
+
+PyQt6>=6.7
+numpy>=1.24
+scipy>=1.10
+sounddevice>=0.4.6
+soundfile>=0.12
+librosa>=0.10
+silero-vad>=6.0
+piper-tts>=1.2
+llama-cpp-python>=0.2
+pyaudio>=0.2
+lingua-language-detector>=2.0
+onnxruntime>=1.16
+transformers>=4.40
+
+# Шумодав (Phase 0): опционально, модуль src/noise.py деградирует без них.
+#   pip install noisereduce          # спектральный фолбэк
+#   pip install pyrnnoise            # реалтайм RNNoise (48 кГц)
+# noisereduce>=3.0
+
